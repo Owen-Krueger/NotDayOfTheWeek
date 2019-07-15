@@ -17,13 +17,17 @@
 			text-decoration: none;
 			color: blue;
 		}
+		i {
+			color: red;
+		}
 	</style>
 </head>
 <body>
 	<p id="text"></p>
 	
 	<div class="corner">
-		<a href="fancy.html">Fancy Styling</a>
+		<h4>Oooooo so fancy.</h4>
+		<a href="index.html">Go back</a>
 	</div>
 	
 	<script>
@@ -32,6 +36,6 @@
 		notDay = Math.floor(Math.random() * 7);
 		}
 		var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-		document.getElementById("text").innerHTML = "It's not " + days[notDay] + ".";
+		document.getElementById("text").innerHTML = "It's not <i>" + days[notDay] + "</i>.";
 	</script>
 </body>
